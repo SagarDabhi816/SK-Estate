@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: gilroy;
+    src: url(public/Gilroy-Medium.e7e7c091.ttf);
+}
+body{
+    font-family:Gilroy;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

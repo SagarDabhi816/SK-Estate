@@ -1,0 +1,195 @@
+// @import "../../responsive.scss";
+// .searchBar {
+//   .type {
+//     button {  
+//       padding:16px 36px;
+//       border: 1px solid #999;
+//       border-bottom: none;
+//       cursor: pointer;
+//       text-transform: capitalize;
+    
+
+//       &.active {
+//         color: white;
+//         background-color: black;
+//       }
+//       &:first-child {
+//         border-top-left-radius: 6px;
+//         border-right: none;
+//       }
+//       &:last-child {
+//         border-top-right-radius: 6px;
+//         border-left: none;
+//       }
+//     }
+//   }
+// }
+// form {
+//   border: 1px solid #999;
+//   display: flex;
+//   justify-content: space-between;
+//   height:90%;
+//   border-radius:0px 10px 10px 10px;
+
+//   @include xsm{
+//     flex-direction: column;
+//     border: none;
+
+//   }
+
+//   input {
+//     border: none;
+//     padding: 0px 10px;
+//     width: 200px;  
+//       @include xsm{
+//       padding: 20px;
+//       width: 50px;
+//       border: 1px solid black;
+//       }
+      
+//       @include xl{
+//         padding: 0px 5px;
+
+//         &:nth-child(2),
+//         &:nth-child(3) {
+//           width: 140px;
+//         }
+//       }
+//       @include md {
+//         width: 200px;
+//         &:nth-child(2),
+//         &:nth-child(3) {
+//           width: 200px;
+//         }
+//       }
+
+//       @include sm{
+//         width: 100px;
+//         &:nth-child(2),
+//         &:nth-child(3) {
+//           width: 100px;
+//         }
+//         padding: 20px;
+//         border: 1px solid #999;
+//       }
+//   }
+
+//   button {
+//     border: none;
+//     cursor: pointer;
+//     background-color: #fece51;
+//     border-top-right-radius: 10px;
+//     border-bottom-right-radius: 10px;
+//     flex:1;
+//     @include xsm{
+//       border-radius:0px 0px 10px 10px;
+//     }
+
+//     img {
+//       width:20%;
+//       @include xsm{
+//         width: 5%;
+//       }
+//     }
+   
+
+   
+//   }
+// }
+
+@import "../../responsive.scss";
+
+.searchBar {
+  .type {
+
+
+    button {
+      padding: 16px 36px;
+      border: 1px solid #999;
+      border-bottom: none;
+      cursor: pointer;
+      background-color: white;
+      text-transform: capitalize;
+
+      &.active {
+        background-color: black;
+        color: white;
+      }
+
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-right: none;
+      }
+      &:last-child {
+        border-top-right-radius: 5px;
+        border-left: none;
+      }
+    }
+  }
+
+  form {
+    border: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+
+     outline: none;
+
+    @include sm {
+      flex-direction: column;
+      border: none;
+    }
+
+    input {
+      border: 1px solid black;
+      outline: none;
+      border: none;
+      padding: 0px 10px;
+      width: 200px;
+  
+ 
+     
+     
+      @include xl{
+        padding: 0px 5px;
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: 140px;
+        }
+      }
+      @include md {
+        width: 200px;
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: 200px;
+        }
+      }
+
+      @include sm{
+        width: auto;
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: auto;
+        }
+        padding: 20px;
+        border: 1px solid #999;
+      }
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      background-color: #fece51;
+      flex: 1;
+      @include sm{
+        padding: 10px;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

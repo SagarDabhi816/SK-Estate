@@ -1,0 +1,5 @@
+uses
+
+bcrypt to encrypt the password
+postman to send request
+prisma
