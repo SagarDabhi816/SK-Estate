@@ -3,3 +3,17 @@ uses
 bcrypt to encrypt the password
 postman to send request
 prisma
+
+
+
+1 -- To add hotels go to google map and get the location
+2 -- set this location to latitude & longitude dummydata.js 
+3 -- now change data or add your own data as image name pricing etc 
+
+Center position of gujrat 
+latitude: 21.532851,
+longitude: 70.458925,
+
+default center position london
+latitude:51.505,
+longitude:-0.09

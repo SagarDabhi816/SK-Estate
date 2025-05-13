@@ -2,8 +2,13 @@ import { useState } from "react";
 import "./login.scss";
 import { Link, useNavigate } from "react-router-dom";
 import apiRequest from "../../lib/apiRequest";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
+
 
 function Login() {
+  
+  const {currentUser,updateUser} = useContext(AuthContext);
 
 const [error, seterror] = useState("");
 const [isLoading, setisLoading] = useState(false)
@@ -24,7 +29,7 @@ const [isLoading, setisLoading] = useState(false)
         password,
       });
 
-        localStorage.setItem("user",JSON.stringify(res.data))
+      updateUser(res.data)
       navigate("/")
     } catch (error) {
       console.log(error);

@@ -1,9 +1,21 @@
 import "./Homepage.scss";
 import Searchbar from "../../Components/searchbar/Searchbar";
+import { useContext, useEffect } from "react";
+import { AuthContext } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 function Homepage() {
+
+  const {currentUser} = useContext(AuthContext);
+
+    const navigate = useNavigate();
+  
+    useEffect(()=>{
+      if(!currentUser)navigate("/login")
+    },[currentUser,navigate])
+  
   return (
-    <div className="homepage">
+    currentUser && <div className="homepage">
       <div className="textContainer">
         <div className="wrapper">
           <h1 className="title">Discover Real Estate & Get your dream home</h1>
