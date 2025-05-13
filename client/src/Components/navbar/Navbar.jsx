@@ -6,9 +6,6 @@ import { AuthContext } from "../../context/AuthContext";
 function Navbar() {
   
   const {currentUser} = useContext(AuthContext);
-  useEffect(() => {
-
-}, []);
 
   const [open, setopen] = useState(false);
   
@@ -28,7 +25,7 @@ function Navbar() {
       {currentUser ? (
           <div className="user">
             <img
-              src={currentUser?.avtar || "/noavatar.jpg "}
+              src={currentUser.avatar || "/noavatar.jpg "}
               alt=""
             />
             <span>{currentUser?.username}</span>
