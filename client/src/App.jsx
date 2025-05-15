@@ -7,7 +7,7 @@ import ProfilePage from "./routes/profilepage/profilepage";
 import Login from "./routes/loginpage/login";
 import Register from "./routes/register/register";
 import ProfileUpdatePage from "./routes/profileUpdatePage/profileUpdatePage";
-// import NewPostPage from "./routes/newPostPage/newPostPage";
+import NewPostPage from "./routes/newPostPage/NewPostPage";
 import { listPageLoader, profilePageLoader, singlePageLoader } from "./lib/loaders";
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
         },
         {
           path: "/add",
-          // element: <NewPostPage />,
+          element: <NewPostPage />,
         },
       ],
     },
